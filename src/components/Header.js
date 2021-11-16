@@ -2,7 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { MdKeyboardArrowLeft, MdMic, MdOutlineSettings } from 'react-icons/md';
 
 const Header = () => (
-  <header className="py-2 bg-custom1 text-white fixed-top">
+  <header className="py-2 bg-custom2 text-white fixed-top">
     <Container fluid="md">
       <Row className="mx-0 g-0 justify-content-between align-items-center">
         <Col xs={1}>
