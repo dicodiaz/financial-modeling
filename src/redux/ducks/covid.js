@@ -3,7 +3,7 @@ import Narrativa from '../../services/Narrativa';
 const SET_DATA = 'covid-metrics/covid/setData';
 
 const initialState = {
-  data: {},
+  data: null,
 };
 
 export default (state = initialState, action) => {
