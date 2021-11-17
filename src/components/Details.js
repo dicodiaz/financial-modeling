@@ -63,9 +63,9 @@ const Details = () => {
                         <Col key={id}>
                           <Region
                             name={name}
-                            confirmedTotal={confirmedTotal}
-                            deathsTotal={deathsTotal}
-                            recoveredTotal={recoveredTotal}
+                            confirmedTotal={confirmedTotal || 0}
+                            deathsTotal={deathsTotal || 0}
+                            recoveredTotal={recoveredTotal || 0}
                             index={index}
                           />
                         </Col>
