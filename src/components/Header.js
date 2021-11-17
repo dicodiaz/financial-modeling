@@ -10,7 +10,7 @@ const Header = ({ title, backBtn }) => {
       <Container fluid="md">
         <Row className="mx-0 g-0 justify-content-center align-items-center">
           {backBtn && (
-            <Col xs={1}>
+            <Col xs={1} data-testid="backBtn">
               <MdKeyboardArrowLeft className="fs-1" onClick={() => navigate('/')} />
             </Col>
           )}

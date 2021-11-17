@@ -11,6 +11,7 @@ const Country = ({ name, confirmedTotal, deathsTotal, recoveredTotal, index }) =
         index % 4 === 0 || (index - 3) % 4 === 0 ? ' bg-custom2' : ' bg-custom3'
       }`}
       onClick={() => navigate(`/details/${name}`)}
+      data-testid="country"
     >
       <Card.Body className="d-flex flex-column justify-content-center">
         <Card.Title>{name}</Card.Title>

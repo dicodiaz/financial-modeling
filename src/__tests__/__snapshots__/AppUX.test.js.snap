@@ -1,0 +1,3568 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing UX for the whole App testing snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <header
+        class="py-2 bg-custom2 text-white fixed-top"
+      >
+        <div
+          class="container-md"
+        >
+          <div
+            class="mx-0 g-0 justify-content-center align-items-center row"
+          >
+            <div
+              class="col-1"
+              data-testid="backBtn"
+            >
+              <svg
+                class="fs-1"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+                />
+              </svg>
+            </div>
+            <div
+              class="col-md-11 col-9"
+            >
+              <h1
+                class="mb-0 text-center"
+              >
+                Colombia
+              </h1>
+            </div>
+            <div
+              class="px-1 d-md-none col-1"
+            >
+              <svg
+                class="fs-1"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0z"
+                  fill="none"
+                />
+                <path
+                  d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+                />
+              </svg>
+            </div>
+            <div
+              class="px-1 d-md-none col-1"
+            >
+              <svg
+                class="fs-1"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 24 24"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0h24v24H0V0z"
+                  fill="none"
+                />
+                <path
+                  d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 00-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0014 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.566.566 0 00-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 00.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main
+        class="pt-5 bg-custom1 text-white min-vh-100"
+      >
+        <div
+          class="pt-1 pt-sm-2 pt-md-3 pt-lg-4 px-0 container-md"
+        >
+          <div
+            class="mx-0 gy-1 mb-2 row row-cols-1"
+          >
+            <div
+              class="col"
+            >
+              Total confirmed: 
+              5036287
+            </div>
+            <div
+              class="bg-custom3 col"
+            >
+              Total deaths: 
+              127865
+            </div>
+            <div
+              class="col"
+            >
+              Total recovered: 
+              4624669
+            </div>
+            <div
+              class="bg-custom3 col"
+            >
+              Today's new confirmed: 
+              0
+            </div>
+            <div
+              class="col"
+            >
+              Today's new deaths: 
+              0
+            </div>
+            <div
+              class="bg-custom3 col"
+            >
+              Today's new recovered: 
+              0
+            </div>
+          </div>
+          <div
+            class="mx-0 gx-0 px-2 row"
+          >
+            <div
+              class="col"
+            >
+              <input
+                class="form-control"
+                placeholder="Search..."
+                value=""
+              />
+            </div>
+            <div
+              class="col-auto"
+            >
+              <button
+                class="btn btn-danger"
+                type="button"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+          <h2
+            class="text-center h6 my-2"
+          >
+            STATS BY REGION
+          </h2>
+          <div
+            class="mx-0 gx-0 row row-cols-1"
+          >
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Bogotá
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          1458804
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          27587
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          1369593
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Antioquia
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          762730
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          16423
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          690291
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Guaviare
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          5153
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          97
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          4858
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Vaupés
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          1794
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          17
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          1706
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Risaralda
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          88197
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          2239
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          82460
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Tolima
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          107944
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3669
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          100294
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Valle del Cauca
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          413912
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          13093
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          369318
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Quindío
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          57501
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          1775
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          52396
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Meta
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          89885
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          2279
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          82668
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Sucre
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          59575
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          1627
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          55260
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Huila
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          88694
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3149
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          81215
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Magdalena
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          98501
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3405
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          84764
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Putumayo
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          16712
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          677
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          14664
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Cesar
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          90947
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          2511
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          83130
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Norte de Santander
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          95945
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          4425
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          81305
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Santander
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          227980
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          7342
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          209273
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Caquetá
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          22970
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          941
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          20895
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Chocó
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          16470
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          400
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          15449
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Bolívar
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          159473
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3004
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          147652
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Boyacá
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          106085
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          2572
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          99147
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Guainía
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          2361
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          30
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          2175
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Arauca
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          13828
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          465
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          12122
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Nariño
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          90119
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3034
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          82210
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Córdoba
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          104433
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          3740
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          94896
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Caldas
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          101060
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          2278
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          94830
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Casanare
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          35777
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          933
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          32835
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Vichada
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          2982
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          53
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          2774
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Cundinamarca
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          265686
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          6835
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          247445
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      San Andrés y Provincia
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          7553
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          139
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          6590
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Cauca
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          56484
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          1580
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          50002
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      La Guajira
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          44517
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          1374
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          39944
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom3 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Atlántico
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          335350
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          9620
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          296855
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="rounded-0 h-100 bg-custom2 card"
+                data-testid="region"
+              >
+                <div
+                  class="d-flex flex-column justify-content-center card-body"
+                >
+                  <div
+                    class="row row-cols-2"
+                  >
+                    <div
+                      class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                    >
+                      Amazonas
+                    </div>
+                    <div
+                      class="col"
+                    >
+                      <div
+                        class="row row-cols-1"
+                      >
+                        <div
+                          class="col"
+                        >
+                          Confirmed: 
+                          6865
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Deaths: 
+                          256
+                        </div>
+                        <div
+                          class="col"
+                        >
+                          Recovered: 
+                          6337
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>,
+  "container": <div>
+    <header
+      class="py-2 bg-custom2 text-white fixed-top"
+    >
+      <div
+        class="container-md"
+      >
+        <div
+          class="mx-0 g-0 justify-content-center align-items-center row"
+        >
+          <div
+            class="col-1"
+            data-testid="backBtn"
+          >
+            <svg
+              class="fs-1"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"
+              />
+            </svg>
+          </div>
+          <div
+            class="col-md-11 col-9"
+          >
+            <h1
+              class="mb-0 text-center"
+            >
+              Colombia
+            </h1>
+          </div>
+          <div
+            class="px-1 d-md-none col-1"
+          >
+            <svg
+              class="fs-1"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"
+              />
+            </svg>
+          </div>
+          <div
+            class="px-1 d-md-none col-1"
+          >
+            <svg
+              class="fs-1"
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+              <path
+                d="M19.43 12.98c.04-.32.07-.64.07-.98 0-.34-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46a.5.5 0 00-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0014 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1a.566.566 0 00-.18-.03c-.17 0-.34.09-.43.25l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98 0 .33.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46a.5.5 0 00.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.06.02.12.03.18.03.17 0 .34-.09.43-.25l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zm-1.98-1.71c.04.31.05.52.05.73 0 .21-.02.43-.05.73l-.14 1.13.89.7 1.08.84-.7 1.21-1.27-.51-1.04-.42-.9.68c-.43.32-.84.56-1.25.73l-1.06.43-.16 1.13-.2 1.35h-1.4l-.19-1.35-.16-1.13-1.06-.43c-.43-.18-.83-.41-1.23-.71l-.91-.7-1.06.43-1.27.51-.7-1.21 1.08-.84.89-.7-.14-1.13c-.03-.31-.05-.54-.05-.74s.02-.43.05-.73l.14-1.13-.89-.7-1.08-.84.7-1.21 1.27.51 1.04.42.9-.68c.43-.32.84-.56 1.25-.73l1.06-.43.16-1.13.2-1.35h1.39l.19 1.35.16 1.13 1.06.43c.43.18.83.41 1.23.71l.91.7 1.06-.43 1.27-.51.7 1.21-1.07.85-.89.7.14 1.13zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 6c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main
+      class="pt-5 bg-custom1 text-white min-vh-100"
+    >
+      <div
+        class="pt-1 pt-sm-2 pt-md-3 pt-lg-4 px-0 container-md"
+      >
+        <div
+          class="mx-0 gy-1 mb-2 row row-cols-1"
+        >
+          <div
+            class="col"
+          >
+            Total confirmed: 
+            5036287
+          </div>
+          <div
+            class="bg-custom3 col"
+          >
+            Total deaths: 
+            127865
+          </div>
+          <div
+            class="col"
+          >
+            Total recovered: 
+            4624669
+          </div>
+          <div
+            class="bg-custom3 col"
+          >
+            Today's new confirmed: 
+            0
+          </div>
+          <div
+            class="col"
+          >
+            Today's new deaths: 
+            0
+          </div>
+          <div
+            class="bg-custom3 col"
+          >
+            Today's new recovered: 
+            0
+          </div>
+        </div>
+        <div
+          class="mx-0 gx-0 px-2 row"
+        >
+          <div
+            class="col"
+          >
+            <input
+              class="form-control"
+              placeholder="Search..."
+              value=""
+            />
+          </div>
+          <div
+            class="col-auto"
+          >
+            <button
+              class="btn btn-danger"
+              type="button"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+        <h2
+          class="text-center h6 my-2"
+        >
+          STATS BY REGION
+        </h2>
+        <div
+          class="mx-0 gx-0 row row-cols-1"
+        >
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Bogotá
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        1458804
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        27587
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        1369593
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Antioquia
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        762730
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        16423
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        690291
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Guaviare
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        5153
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        97
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        4858
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Vaupés
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        1794
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        17
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        1706
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Risaralda
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        88197
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        2239
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        82460
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Tolima
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        107944
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3669
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        100294
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Valle del Cauca
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        413912
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        13093
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        369318
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Quindío
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        57501
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        1775
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        52396
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Meta
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        89885
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        2279
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        82668
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Sucre
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        59575
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        1627
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        55260
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Huila
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        88694
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3149
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        81215
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Magdalena
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        98501
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3405
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        84764
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Putumayo
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        16712
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        677
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        14664
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Cesar
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        90947
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        2511
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        83130
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Norte de Santander
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        95945
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        4425
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        81305
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Santander
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        227980
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        7342
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        209273
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Caquetá
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        22970
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        941
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        20895
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Chocó
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        16470
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        400
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        15449
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Bolívar
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        159473
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3004
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        147652
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Boyacá
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        106085
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        2572
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        99147
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Guainía
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        2361
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        30
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        2175
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Arauca
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        13828
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        465
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        12122
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Nariño
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        90119
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3034
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        82210
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Córdoba
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        104433
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        3740
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        94896
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Caldas
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        101060
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        2278
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        94830
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Casanare
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        35777
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        933
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        32835
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Vichada
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        2982
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        53
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        2774
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Cundinamarca
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        265686
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        6835
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        247445
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    San Andrés y Provincia
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        7553
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        139
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        6590
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Cauca
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        56484
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        1580
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        50002
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    La Guajira
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        44517
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        1374
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        39944
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom3 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Atlántico
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        335350
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        9620
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        296855
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="rounded-0 h-100 bg-custom2 card"
+              data-testid="region"
+            >
+              <div
+                class="d-flex flex-column justify-content-center card-body"
+              >
+                <div
+                  class="row row-cols-2"
+                >
+                  <div
+                    class="mb-0 d-flex flex-column justify-content-center card-title h5"
+                  >
+                    Amazonas
+                  </div>
+                  <div
+                    class="col"
+                  >
+                    <div
+                      class="row row-cols-1"
+                    >
+                      <div
+                        class="col"
+                      >
+                        Confirmed: 
+                        6865
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Deaths: 
+                        256
+                      </div>
+                      <div
+                        class="col"
+                      >
+                        Recovered: 
+                        6337
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
