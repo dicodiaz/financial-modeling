@@ -2,10 +2,12 @@ import Narrativa from '../../services/Narrativa';
 
 const SET_DATA = 'covid-metrics/covid/setData';
 const SET_IS_FIRST_RENDER = 'covid-metrics/covid/setIsFirstRender';
+const SET_TODAYS_DATE = 'covid-metrics/covid/setTodaysDate';
 
 const initialState = {
   data: null,
   isFirstRender: true,
+  todaysDate: null,
   covidDataTotalMock: {
     today_confirmed: 0,
     today_deaths: 0,
@@ -22,6 +24,8 @@ export default (state = initialState, action) => {
       return { ...state, data: action.payload };
     case SET_IS_FIRST_RENDER:
       return { ...state, isFirstRender: action.payload };
+    case SET_TODAYS_DATE:
+      return { ...state, todaysDate: action.payload };
     default:
       return state;
   }
@@ -37,9 +41,15 @@ export const setIsFirstRender = (payload) => ({
   payload,
 });
 
+export const setTodaysDate = (payload) => ({
+  type: SET_TODAYS_DATE,
+  payload,
+});
+
 export const getDataFromAPI = (date) => (dispatch) => {
   Narrativa.getSingleDayInfo(date).then((data) => {
-    dispatch(setData(data));
+    dispatch(setTodaysDate(date));
     dispatch(setIsFirstRender(false));
+    dispatch(setData(data));
   });
 };
