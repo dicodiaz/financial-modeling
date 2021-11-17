@@ -5,6 +5,8 @@ import App from '../App';
 import testStore from '../redux/testStore';
 import getMockCovidData from '../__mocks__/getMockCovidData';
 
+global.scrollTo = jest.fn();
+
 const clickElements = (elements, indexes = []) => {
   indexes.forEach((index) => {
     fireEvent.click(elements[index]);
