@@ -8,7 +8,7 @@ This is a mobile web application that features 2 pages: The homepage and the det
 
 ## Live Demo
 
-[Live Demo Link](https://dicodiaz-covid-metrics.netlify.app)
+[Live Demo Link](https://deploy-preview-2--dicodiaz-covid-metrics.netlify.app)
 
 ## Built With
 
