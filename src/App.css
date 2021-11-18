@@ -23,3 +23,7 @@ body {
 .bg-custom3 {
   background-color: #3c5e9f !important;
 }
+
+.cursor-pointer {
+  cursor: pointer !important;
+}

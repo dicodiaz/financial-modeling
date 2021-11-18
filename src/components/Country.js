@@ -7,7 +7,7 @@ const Country = ({ name, confirmedTotal, deathsTotal, recoveredTotal, index }) =
 
   return (
     <Card
-      className={`rounded-0 h-100${
+      className={`rounded-0 h-100 cursor-pointer${
         index % 4 === 0 || (index - 3) % 4 === 0 ? ' bg-custom2' : ' bg-custom3'
       }`}
       onClick={() => navigate(`/details/${name}`)}
