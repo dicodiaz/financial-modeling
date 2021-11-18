@@ -106,13 +106,13 @@ Object {
               class="col"
             >
               Total confirmed: 
-              5038544
+              5034266
             </div>
             <div
               class="bg-custom3 col"
             >
               Total deaths: 
-              127912
+              127833
             </div>
             <div
               class="col"
@@ -124,13 +124,13 @@ Object {
               class="bg-custom3 col"
             >
               Today's new confirmed: 
-              0
+              2321
             </div>
             <div
               class="col"
             >
               Today's new deaths: 
-              0
+              24
             </div>
             <div
               class="bg-custom3 col"
@@ -198,13 +198,13 @@ Object {
                           class="col"
                         >
                           Confirmed: 
-                          1459032
+                          1458619
                         </div>
                         <div
                           class="col"
                         >
                           Deaths: 
-                          27590
+                          27584
                         </div>
                         <div
                           class="col"
@@ -325,13 +325,13 @@ Object {
             class="col"
           >
             Total confirmed: 
-            5038544
+            5034266
           </div>
           <div
             class="bg-custom3 col"
           >
             Total deaths: 
-            127912
+            127833
           </div>
           <div
             class="col"
@@ -343,13 +343,13 @@ Object {
             class="bg-custom3 col"
           >
             Today's new confirmed: 
-            0
+            2321
           </div>
           <div
             class="col"
           >
             Today's new deaths: 
-            0
+            24
           </div>
           <div
             class="bg-custom3 col"
@@ -417,13 +417,13 @@ Object {
                         class="col"
                       >
                         Confirmed: 
-                        1459032
+                        1458619
                       </div>
                       <div
                         class="col"
                       >
                         Deaths: 
-                        27590
+                        27584
                       </div>
                       <div
                         class="col"

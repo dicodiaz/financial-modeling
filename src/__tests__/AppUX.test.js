@@ -1,20 +1,21 @@
 import { fireEvent, render, within } from '@testing-library/react';
 import fetchMock from 'fetch-mock';
+import MockDate from 'mockdate';
 import { Provider } from 'react-redux';
 import App from '../App';
 import testStore from '../redux/testStore';
 import getMockCovidData from '../__mocks__/getMockCovidData';
 
 global.scrollTo = jest.fn();
-const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 let tree;
 describe('testing UX for the whole App', () => {
-  const url = 'https://api.covid19tracking.narrativa.com/api/';
-  fetchMock.get(url, getMockCovidData());
+  const url = 'https://api.covid19tracking.narrativa.com/api/2021-11-15';
 
   beforeEach(() => {
+    MockDate.set('2021-11-15T12:00');
     fetchMock.reset();
+    fetchMock.get(url, getMockCovidData());
     tree = render(
       <Provider store={testStore}>
         <App />
@@ -22,11 +23,14 @@ describe('testing UX for the whole App', () => {
     );
   });
 
+  afterAll(() => {
+    MockDate.reset();
+  });
+
   test('testing homepage, details page, navigation between both, and snapshot', async () => {
     // homepage
-    await delay(1000);
     const countries = await tree.findAllByTestId('country');
-    expect(countries).toHaveLength(195);
+    expect(countries).toHaveLength(38);
     const inputCountry = await tree.findByRole('textbox');
     fireEvent.change(inputCountry, { target: { value: 'Colombia' } });
     const country = await tree.findByTestId('country');
