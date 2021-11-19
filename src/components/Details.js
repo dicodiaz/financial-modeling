@@ -1,5 +1,3 @@
-/* eslint-disable no-nested-ternary */
-
 import { useEffect } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
@@ -41,8 +39,8 @@ const Details = () => {
       <main className="pt-5 bg-custom1 text-white min-vh-100">
         <Container fluid="md" className="pt-1 pt-sm-2 pt-md-3 pt-lg-4 px-0">
           <Total covidDataTotal={countryCovidData} />
-          {covidData ? (
-            countryCovidData.regions.length > 0 ? (
+          {covidData &&
+            (countryCovidData.regions.length > 0 ? (
               <>
                 <SearchBar value={regionValue} onChange={regionOnChange} clear={regionClear} />
                 <h2 className="text-center h6 my-2">STATS BY REGION</h2>
@@ -75,8 +73,8 @@ const Details = () => {
               </>
             ) : (
               <p className="text-center my-2">No regions found</p>
-            )
-          ) : (
+            ))}
+          {!covidData && (
             <Row xs="auto" className="mx-0 justify-content-center align-items-center mt-2">
               <Spinner animation="border" />
               <p className="mb-0">Loading...</p>

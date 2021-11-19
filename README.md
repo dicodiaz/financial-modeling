@@ -35,7 +35,7 @@ Follow the steps described before.
 
 In order to run the predefined tests for this project, run `npm test`
 
-## Authors
+## Author
 
 👤 **Dico Diaz Dussan**
 
