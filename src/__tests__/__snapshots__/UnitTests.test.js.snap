@@ -1,0 +1,539 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing snapshots for my child components testing snapshot for Country.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="rounded-0 h-100 cursor-pointer bg-custom2 card"
+        data-testid="country"
+      >
+        <div
+          class="d-flex flex-column justify-content-center card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Colombia
+          </div>
+          <div
+            class="row row-cols-1"
+          >
+            <div
+              class="col"
+            >
+              Confirmed: 
+              100
+            </div>
+            <div
+              class="col"
+            >
+              Deaths: 
+              1
+            </div>
+            <div
+              class="col"
+            >
+              Recovered: 
+              99
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="rounded-0 h-100 cursor-pointer bg-custom2 card"
+      data-testid="country"
+    >
+      <div
+        class="d-flex flex-column justify-content-center card-body"
+      >
+        <div
+          class="card-title h5"
+        >
+          Colombia
+        </div>
+        <div
+          class="row row-cols-1"
+        >
+          <div
+            class="col"
+          >
+            Confirmed: 
+            100
+          </div>
+          <div
+            class="col"
+          >
+            Deaths: 
+            1
+          </div>
+          <div
+            class="col"
+          >
+            Recovered: 
+            99
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`testing snapshots for my child components testing snapshot for Region.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="rounded-0 h-100 bg-custom2 card"
+        data-testid="region"
+      >
+        <div
+          class="d-flex flex-column justify-content-center card-body"
+        >
+          <div
+            class="row row-cols-2"
+          >
+            <div
+              class="mb-0 d-flex flex-column justify-content-center card-title h5"
+            >
+              Bogotá
+            </div>
+            <div
+              class="col"
+            >
+              <div
+                class="row row-cols-1"
+              >
+                <div
+                  class="col"
+                >
+                  Confirmed: 
+                  100
+                </div>
+                <div
+                  class="col"
+                >
+                  Deaths: 
+                  1
+                </div>
+                <div
+                  class="col"
+                >
+                  Recovered: 
+                  99
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="rounded-0 h-100 bg-custom2 card"
+      data-testid="region"
+    >
+      <div
+        class="d-flex flex-column justify-content-center card-body"
+      >
+        <div
+          class="row row-cols-2"
+        >
+          <div
+            class="mb-0 d-flex flex-column justify-content-center card-title h5"
+          >
+            Bogotá
+          </div>
+          <div
+            class="col"
+          >
+            <div
+              class="row row-cols-1"
+            >
+              <div
+                class="col"
+              >
+                Confirmed: 
+                100
+              </div>
+              <div
+                class="col"
+              >
+                Deaths: 
+                1
+              </div>
+              <div
+                class="col"
+              >
+                Recovered: 
+                99
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`testing snapshots for my child components testing snapshot for SearchBar.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="mx-0 gx-0 px-2 row"
+      >
+        <div
+          class="col"
+        >
+          <input
+            class="form-control"
+            placeholder="Search..."
+            value=""
+          />
+        </div>
+        <div
+          class="col-auto"
+        >
+          <button
+            class="btn btn-danger"
+            type="button"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="mx-0 gx-0 px-2 row"
+    >
+      <div
+        class="col"
+      >
+        <input
+          class="form-control"
+          placeholder="Search..."
+          value=""
+        />
+      </div>
+      <div
+        class="col-auto"
+      >
+        <button
+          class="btn btn-danger"
+          type="button"
+        >
+          Clear
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`testing snapshots for my child components testing snapshot for Total.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="mx-0 gy-1 mb-2 row row-cols-1"
+      >
+        <div
+          class="col"
+        >
+          Total confirmed: 
+          150
+        </div>
+        <div
+          class="bg-custom3 col"
+        >
+          Total deaths: 
+          1
+        </div>
+        <div
+          class="col"
+        >
+          Total recovered: 
+          100
+        </div>
+        <div
+          class="bg-custom3 col"
+        >
+          Today's new confirmed: 
+          2
+        </div>
+        <div
+          class="col"
+        >
+          Today's new deaths: 
+          0
+        </div>
+        <div
+          class="bg-custom3 col"
+        >
+          Today's new recovered: 
+          10
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="mx-0 gy-1 mb-2 row row-cols-1"
+    >
+      <div
+        class="col"
+      >
+        Total confirmed: 
+        150
+      </div>
+      <div
+        class="bg-custom3 col"
+      >
+        Total deaths: 
+        1
+      </div>
+      <div
+        class="col"
+      >
+        Total recovered: 
+        100
+      </div>
+      <div
+        class="bg-custom3 col"
+      >
+        Today's new confirmed: 
+        2
+      </div>
+      <div
+        class="col"
+      >
+        Today's new deaths: 
+        0
+      </div>
+      <div
+        class="bg-custom3 col"
+      >
+        Today's new recovered: 
+        10
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
