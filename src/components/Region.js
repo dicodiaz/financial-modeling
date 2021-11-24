@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 import { Card, Col, Row } from 'react-bootstrap';
 
-const Region = ({ name, confirmedTotal, deathsTotal, recoveredTotal, index }) => (
-  <Card
-    className={`rounded-0 h-100${index % 2 === 0 ? ' bg-custom2' : ' bg-custom3'}`}
-    data-testid="region"
-  >
+const Region = ({ name, confirmedTotal, deathsTotal, recoveredTotal }) => (
+  <Card className="rounded-0 h-100 bg-region" data-testid="region">
     <Card.Body className="d-flex flex-column justify-content-center">
       <Row xs={2}>
         <Card.Title className="mb-0 d-flex flex-column justify-content-center">{name}</Card.Title>
@@ -26,7 +23,6 @@ Region.propTypes = {
   confirmedTotal: PropTypes.number.isRequired,
   deathsTotal: PropTypes.number.isRequired,
   recoveredTotal: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default Region;

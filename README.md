@@ -4,11 +4,19 @@
 
 This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countries. When the user clicks on any country, the website navigates to the details page, which contains the detailed statistics about that specific country as a total and separated by regions. Both pages contain a search bar that allows the user to filter by country name. The data is consumed from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). Built with React, Redux, and Bootstrap.
 
+## Mobile
+
 ![screenshot](./app_screenshot.png)
+
+## Desktop
+
+![screenshot](./app_screenshot-2.png)
+
+## Built With
 
 ## Live Demo
 
-[Live Demo Link](https://deploy-preview-2--dicodiaz-covid-metrics.netlify.app)
+[Live Demo Link](https://dicodiaz-covid-metrics.netlify.app)
 
 ## Built With
 

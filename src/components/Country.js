@@ -2,14 +2,12 @@ import PropTypes from 'prop-types';
 import { Card, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
-const Country = ({ name, confirmedTotal, deathsTotal, recoveredTotal, index }) => {
+const Country = ({ name, confirmedTotal, deathsTotal, recoveredTotal }) => {
   const navigate = useNavigate();
 
   return (
     <Card
-      className={`rounded-0 h-100 cursor-pointer${
-        index % 4 === 0 || (index - 3) % 4 === 0 ? ' bg-custom2' : ' bg-custom3'
-      }`}
+      className="rounded-0 h-100 cursor-pointer bg-country"
       onClick={() => navigate(`/details/${name}`)}
       data-testid="country"
     >
@@ -30,7 +28,6 @@ Country.propTypes = {
   confirmedTotal: PropTypes.number.isRequired,
   deathsTotal: PropTypes.number.isRequired,
   recoveredTotal: PropTypes.number.isRequired,
-  index: PropTypes.number.isRequired,
 };
 
 export default Country;

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import useInputHook from '../hooks/inputHook';
 import { getDataFromAPI } from '../redux/ducks/covid';
@@ -39,10 +39,10 @@ const Home = () => {
             <>
               <SearchBar value={countryValue} onChange={countryOnChange} clear={countryClear} />
               <h2 className="text-center h6 my-2">STATS BY COUNTRY</h2>
-              <Row xs={2} className="mx-0 gx-0">
+              <Row xs={2} md={3} lg={4} xl={5} className="mx-0 gx-0">
                 {Object.entries(covidData.dates[date].countries)
                   .filter(([name]) => name.toLowerCase().startsWith(countryValue.toLowerCase()))
-                  .map(([name, info], index) => {
+                  .map(([name, info]) => {
                     const {
                       id,
                       today_confirmed: confirmedTotal,
@@ -50,15 +50,13 @@ const Home = () => {
                       today_recovered: recoveredTotal,
                     } = info;
                     return (
-                      <Col key={id}>
-                        <Country
-                          name={name}
-                          confirmedTotal={confirmedTotal || 0}
-                          deathsTotal={deathsTotal || 0}
-                          recoveredTotal={recoveredTotal || 0}
-                          index={index}
-                        />
-                      </Col>
+                      <Country
+                        key={id}
+                        name={name}
+                        confirmedTotal={confirmedTotal || 0}
+                        deathsTotal={deathsTotal || 0}
+                        recoveredTotal={recoveredTotal || 0}
+                      />
                     );
                   })}
               </Row>

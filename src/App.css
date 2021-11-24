@@ -27,3 +27,42 @@ body {
 .cursor-pointer {
   cursor: pointer !important;
 }
+
+.bg-country,
+.bg-region {
+  background-color: #5176be;
+}
+
+@media screen and (max-width: 768px) {
+  .bg-country:nth-child(4n-2),
+  .bg-country:nth-child(4n-1),
+  .bg-region:nth-child(even) {
+    background-color: #3c5e9f;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .bg-country:nth-child(even),
+  .bg-region:nth-child(4n-2),
+  .bg-region:nth-child(4n-1) {
+    background-color: #3c5e9f;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .bg-country:nth-child(8n-6),
+  .bg-country:nth-child(8n-4),
+  .bg-country:nth-child(8n-3),
+  .bg-country:nth-child(8n-1),
+  .bg-region:nth-child(4n-2),
+  .bg-region:nth-child(4n-1) {
+    background-color: #3c5e9f;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bg-country:nth-child(even),
+  .bg-region:nth-child(even) {
+    background-color: #3c5e9f;
+  }
+}

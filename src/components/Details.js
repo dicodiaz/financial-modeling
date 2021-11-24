@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import { Container, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import useInputHook from '../hooks/inputHook';
@@ -44,12 +44,12 @@ const Details = () => {
               <>
                 <SearchBar value={regionValue} onChange={regionOnChange} clear={regionClear} />
                 <h2 className="text-center h6 my-2">STATS BY REGION</h2>
-                <Row xs={1} className="mx-0 gx-0">
+                <Row xs={1} md={2} xl={3} className="mx-0 gx-0">
                   {countryCovidData.regions
                     .filter((region) =>
                       region.name.toLowerCase().startsWith(regionValue.toLowerCase()),
                     )
-                    .map((info, index) => {
+                    .map((info) => {
                       const {
                         id,
                         name,
@@ -58,15 +58,13 @@ const Details = () => {
                         today_recovered: recoveredTotal,
                       } = info;
                       return (
-                        <Col key={id}>
-                          <Region
-                            name={name}
-                            confirmedTotal={confirmedTotal || 0}
-                            deathsTotal={deathsTotal || 0}
-                            recoveredTotal={recoveredTotal || 0}
-                            index={index}
-                          />
-                        </Col>
+                        <Region
+                          key={id}
+                          name={name}
+                          confirmedTotal={confirmedTotal || 0}
+                          deathsTotal={deathsTotal || 0}
+                          recoveredTotal={recoveredTotal || 0}
+                        />
                       );
                     })}
                 </Row>
