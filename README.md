@@ -14,17 +14,15 @@ This is a mobile web application that features 2 pages: The homepage and the det
 
 ## Built With
 
-## Live Demo
-
-[Live Demo Link](https://dicodiaz-covid-metrics.netlify.app)
-
-## Built With
-
 - React
 - Redux
 - Bootstrap
 - VSCode
 - Git & GitHub
+
+## Live Demo
+
+[Live Demo Link](https://dicodiaz-covid-metrics.netlify.app)
 
 ## Getting Started
 
