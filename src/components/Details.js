@@ -3,7 +3,7 @@ import { Container, Row, Spinner } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import useInputHook from '../hooks/inputHook';
-import { getDataFromAPI } from '../redux/ducks/covid';
+import { getIncomeStatementsBySymbolFromAPI } from '../redux/ducks/financialModeling';
 import Header from './Header';
 import Region from './Region';
 import SearchBar from './SearchBar';
@@ -11,35 +11,30 @@ import Total from './Total';
 
 const Details = () => {
   const dispatch = useDispatch();
-  const { country } = useParams();
-  const covidData = useSelector((state) => state.covidReducer.data);
-  const isFirstRender = useSelector((state) => state.covidReducer.isFirstRender);
-  const date = useSelector((state) => state.covidReducer.todaysDate);
-  const covidDataTotalMock = useSelector((state) => state.covidReducer.covidDataTotalMock);
+  const { symbol } = useParams();
+  const data = useSelector((state) => state.financialModelingReducer.data);
+  // const isFirstRender = useSelector((state) => state.financialModelingReducer.isFirstRender);
+  const date = useSelector((state) => state.financialModelingReducer.todaysDate);
+  const covidDataTotalMock = useSelector(
+    (state) => state.financialModelingReducer.covidDataTotalMock,
+  );
   const { value: regionValue, onChange: regionOnChange, clear: regionClear } = useInputHook('');
-  const countryCovidData = covidData
-    ? covidData.dates[date].countries[country]
-    : covidDataTotalMock;
-
-  useEffect(() => {
-    if (isFirstRender) {
-      const date = new Date();
-      date.setMinutes(date.getMinutes() - date.getTimezoneOffset());
-      dispatch(getDataFromAPI(date.toISOString().replace(/T.+/g, '')));
-    }
-  }, [dispatch, isFirstRender]);
+  const countryCovidData = data ? data.dates[date].countries[symbol] : covidDataTotalMock;
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (!data) {
+      dispatch(getIncomeStatementsBySymbolFromAPI(symbol));
+    }
   }, []);
 
   return (
     <>
-      <Header title={country} backBtn />
+      <Header title={symbol} backBtn />
       <main className="pt-5 bg-custom1 text-white min-vh-100">
         <Container fluid="md" className="pt-1 pt-sm-2 pt-md-3 pt-lg-4 px-0">
           <Total covidDataTotal={countryCovidData} />
-          {covidData &&
+          {data &&
             (countryCovidData.regions.length > 0 ? (
               <>
                 <SearchBar value={regionValue} onChange={regionOnChange} clear={regionClear} />
@@ -72,7 +67,7 @@ const Details = () => {
             ) : (
               <p className="text-center my-2">No regions found</p>
             ))}
-          {!covidData && (
+          {!data && (
             <Row xs="auto" className="mx-0 justify-content-center align-items-center mt-2">
               <Spinner animation="border" />
               <p className="mb-0">Loading...</p>

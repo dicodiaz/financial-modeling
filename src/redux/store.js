@@ -1,10 +1,10 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
-import covidReducer from './ducks/covid';
+import financialModelingReducer from './ducks/financialModeling';
 
 const reducer = combineReducers({
-  covidReducer,
+  financialModelingReducer,
 });
 
 const store = createStore(reducer, applyMiddleware(logger, thunk));

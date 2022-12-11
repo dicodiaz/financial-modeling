@@ -33,6 +33,16 @@ body {
   background-color: #5176be;
 }
 
+.page-link {
+  padding-left: 6px;
+  padding-right: 6px;
+  text-align: center;
+}
+
+.w-30px {
+  width: 30px;
+}
+
 @media screen and (max-width: 768px) {
   .bg-country:nth-child(4n-2),
   .bg-country:nth-child(4n-1),
