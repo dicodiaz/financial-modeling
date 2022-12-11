@@ -47,7 +47,7 @@ In order to run the predefined tests for this project, run `npm test`
 
 - GitHub: [@dicodiaz](https://github.com/dicodiaz)
 - LinkedIn: [Dico Diaz Dussan](https://www.linkedin.com/in/dico-diaz-dussan/)
-- Portfolio: [dicodiaz.com.co](https://dicodiaz.com.co)
+- Portfolio: [portfolio.dicodiaz.com.co](https://portfolio.dicodiaz.com.co)
 
 ## 🤝 Contributing
 
