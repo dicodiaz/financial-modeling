@@ -4,6 +4,14 @@ body {
   font-family: gillsans, sans-serif;
 }
 
+a {
+  color: #e9c46a;
+}
+
+a:hover {
+  color: #f4a261;
+}
+
 .font-lato {
   font-family: lato, sans-serif !important;
 }

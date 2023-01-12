@@ -15,7 +15,7 @@ const Header = ({ title, backBtn }) => {
             </Col>
           )}
           <Col xs={backBtn ? 9 : 10} md={backBtn ? 11 : 12}>
-            <h1 className="mb-0 text-center h3">{title}</h1>
+            <h1 className="mb-0 text-center h5">{title}</h1>
           </Col>
           <Col xs={1} className="px-1 d-md-none">
             <MdMic className="fs-3" />
