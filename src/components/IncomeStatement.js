@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { Card, Col, Row } from 'react-bootstrap';
-import { formatToCurrency } from '../utils/utils';
+import formatToCurrency from '../utils/formatToCurrency';
 
 const IncomeStatement = ({ data }) => {
   const {
@@ -18,7 +18,7 @@ const IncomeStatement = ({ data }) => {
   } = data;
 
   return (
-    <Card className="rounded-0 h-100 bg-region" data-testid="region">
+    <Card className="rounded-0 h-100 bg-income-statement" data-testid="income-statement">
       <Card.Body className="d-flex flex-column justify-content-center">
         <Row>
           <Col xs={2} className="d-flex flex-column justify-content-center">

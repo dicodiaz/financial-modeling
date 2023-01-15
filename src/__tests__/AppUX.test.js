@@ -1,56 +1,44 @@
 import { fireEvent, render, within } from '@testing-library/react';
 import fetchMock from 'fetch-mock';
-import MockDate from 'mockdate';
 import { Provider } from 'react-redux';
 import App from '../App';
-import testStore from '../redux/testStore';
-import getMockCovidData from '../__mocks__/getMockCovidData';
+import store from '../redux/store';
+import { API_KEY, BASE_URL } from '../services/getData';
+import mockIncomeStatements from '../__mocks__/mockIncomeStatements';
+import mockSymbolList from '../__mocks__/mockSymbolList';
 
-global.scrollTo = jest.fn();
-
-let tree;
 describe('testing UX for the whole App', () => {
-  const url = 'https://api.covid19tracking.narrativa.com/api/2021-11-15';
+  global.scrollTo = jest.fn();
+  fetchMock.get(`${BASE_URL}income-statement/ETH?apikey=${API_KEY}`, () => mockIncomeStatements);
+  fetchMock.get(
+    `${BASE_URL}financial-statement-symbol-lists?apikey=${API_KEY}`,
+    () => mockSymbolList,
+  );
 
-  beforeEach(() => {
-    MockDate.set('2021-11-15T12:00');
-    fetchMock.reset();
-    fetchMock.get(url, getMockCovidData());
-    tree = render(
-      <Provider store={testStore}>
+  test('testing homepage, details page, navigation between both, and snapshot', async () => {
+    const tree = render(
+      <Provider store={store}>
         <App />
       </Provider>,
     );
-  });
-
-  afterAll(() => {
-    MockDate.reset();
-  });
-
-  test('testing homepage, details page, navigation between both, and snapshot', async () => {
     // homepage
-    const countries = await tree.findAllByTestId('country');
-    expect(countries).toHaveLength(38);
-    const inputCountry = await tree.findByRole('textbox');
-    fireEvent.change(inputCountry, { target: { value: 'Colombia' } });
-    const country = await tree.findByTestId('country');
-    expect(await within(country).findByText('Colombia')).toBeTruthy();
-    expect(await tree.queryByTestId('backBtn')).toBeFalsy();
+    let symbols = await tree.findAllByTestId('symbol');
+    expect(symbols).toHaveLength(500);
+    const inputSymbol = tree.getByRole('textbox');
+    fireEvent.change(inputSymbol, { target: { value: 'ETH' } });
+    symbols = tree.getAllByTestId('symbol');
+    expect(within(symbols[0]).getByText('ETH')).toBeTruthy();
+    expect(tree.queryByTestId('backBtn')).toBeFalsy();
     // navigation to details page
-    fireEvent.click(country);
+    fireEvent.click(symbols[0]);
     // details page
-    const regions = await tree.findAllByTestId('region');
-    expect(regions).toHaveLength(33);
-    const inputRegion = await tree.findByRole('textbox');
-    fireEvent.change(inputRegion, { target: { value: 'Bogotá' } });
-    const region = await tree.findByTestId('region');
-    expect(await within(region).findByText('Bogotá')).toBeTruthy();
-    expect(await tree.queryByTestId('backBtn')).toBeTruthy();
+    const incomeStatements = await tree.findAllByTestId('income-statement');
+    expect(incomeStatements).toHaveLength(5);
     // navigation to homepage
-    const backBtn = await tree.findByTestId('backBtn');
+    const backBtn = tree.getByTestId('backBtn');
     fireEvent.click(backBtn);
-    expect(tree.queryAllByTestId('country')).toBeTruthy();
+    expect(tree.getAllByTestId('symbol')).toBeTruthy();
     // snapshot
-    expect(tree).toMatchSnapshot();
+    expect(tree.container).toMatchSnapshot();
   });
 });

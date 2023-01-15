@@ -36,8 +36,8 @@ a:hover {
   cursor: pointer !important;
 }
 
-.bg-country,
-.bg-region {
+.bg-symbol,
+.bg-income-statement {
   background-color: #5176be;
 }
 
@@ -52,35 +52,35 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .bg-country:nth-child(4n-2),
-  .bg-country:nth-child(4n-1),
-  .bg-region:nth-child(even) {
+  .bg-symbol:nth-child(4n-2),
+  .bg-symbol:nth-child(4n-1),
+  .bg-income-statement:nth-child(even) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .bg-country:nth-child(even),
-  .bg-region:nth-child(4n-2),
-  .bg-region:nth-child(4n-1) {
+  .bg-symbol:nth-child(even),
+  .bg-income-statement:nth-child(4n-2),
+  .bg-income-statement:nth-child(4n-1) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .bg-country:nth-child(8n-6),
-  .bg-country:nth-child(8n-4),
-  .bg-country:nth-child(8n-3),
-  .bg-country:nth-child(8n-1),
-  .bg-region:nth-child(4n-2),
-  .bg-region:nth-child(4n-1) {
+  .bg-symbol:nth-child(8n-6),
+  .bg-symbol:nth-child(8n-4),
+  .bg-symbol:nth-child(8n-3),
+  .bg-symbol:nth-child(8n-1),
+  .bg-income-statement:nth-child(4n-2),
+  .bg-income-statement:nth-child(4n-1) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .bg-country:nth-child(even),
-  .bg-region:nth-child(even) {
+  .bg-symbol:nth-child(even),
+  .bg-income-statement:nth-child(even) {
     background-color: #3c5e9f;
   }
 }

@@ -7,9 +7,9 @@ const Symbol = ({ data }) => {
 
   return (
     <Card
-      className="rounded-0 h-100 cursor-pointer bg-country"
+      className="rounded-0 h-100 cursor-pointer bg-symbol"
       onClick={() => navigate(`/details/${data}`)}
-      data-testid="country"
+      data-testid="symbol"
     >
       <Card.Body className="d-flex flex-column justify-content-center">
         <Card.Text className="mb-0">{data}</Card.Text>

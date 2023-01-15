@@ -1,63 +1,106 @@
 import { render } from '@testing-library/react';
+import fetchMock from 'fetch-mock';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Country from '../components/Country';
-import Region from '../components/Region';
+import BasicPagination from '../components/BasicPagination';
+import Details from '../components/Details';
+import Header from '../components/Header';
+import Home from '../components/Home';
+import IncomeStatement from '../components/IncomeStatement';
+import PageTemplate from '../components/PageTemplate';
 import SearchBar from '../components/SearchBar';
-import Total from '../components/Total';
+import Symbol from '../components/Symbol';
+import store from '../redux/store';
+import { API_KEY, BASE_URL } from '../services/getData';
+import mockIncomeStatements, { mockIncomeStatement } from '../__mocks__/mockIncomeStatements';
+import mockSymbolList, { mockSymbol } from '../__mocks__/mockSymbolList';
 
-const [nameCountry, nameRegion, confirmedTotal, deathsTotal, recoveredTotal, index] = [
-  'Colombia',
-  'Bogotá',
-  100,
-  1,
-  99,
-  0,
-];
-const covidDataTotalMock = {
-  today_confirmed: 150,
-  today_deaths: 1,
-  today_recovered: 100,
-  today_new_confirmed: 2,
-  today_new_deaths: 0,
-  today_new_recovered: 10,
-};
+jest.mock('react-router-dom', () => ({
+  ...jest.requireActual('react-router-dom'), // use actual for all non-hook parts
+  useParams: () => ({
+    symbol: mockSymbol,
+  }),
+}));
 
-describe('testing snapshots for my child components', () => {
-  test('testing snapshot for Country.js', () => {
-    const countryTree = render(
+describe('testing snapshots for my components', () => {
+  global.scrollTo = jest.fn();
+  const mockFunction = jest.fn();
+  fetchMock.get(
+    `${BASE_URL}income-statement/${mockSymbol}?apikey=${API_KEY}`,
+    () => mockIncomeStatements,
+  );
+  fetchMock.get(
+    `${BASE_URL}financial-statement-symbol-lists?apikey=${API_KEY}`,
+    () => mockSymbolList,
+  );
+
+  test('BasicPagination', () => {
+    const { container } = render(
+      <BasicPagination active={1} total={10} onClick={mockFunction} message="mock message" />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  test('Details', async () => {
+    const { container, findAllByTestId } = render(
       <Router>
-        <Country
-          name={nameCountry}
-          confirmedTotal={confirmedTotal}
-          deathsTotal={deathsTotal}
-          recoveredTotal={recoveredTotal}
-          index={index}
-        />
+        <Details />
       </Router>,
     );
-    expect(countryTree).toMatchSnapshot();
+    await findAllByTestId('income-statement');
+    expect(container).toMatchSnapshot();
   });
 
-  test('testing snapshot for Region.js', () => {
-    const regionTree = render(
-      <Region
-        name={nameRegion}
-        confirmedTotal={confirmedTotal}
-        deathsTotal={deathsTotal}
-        recoveredTotal={recoveredTotal}
-        index={index}
-      />,
+  test('Header', () => {
+    const { container } = render(
+      <Router>
+        <Header title="mock title" />
+      </Router>,
     );
-    expect(regionTree).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
 
-  test('testing snapshot for Total.js', () => {
-    const totalTree = render(<Total covidDataTotal={covidDataTotalMock} />);
-    expect(totalTree).toMatchSnapshot();
+  test('Home', async () => {
+    const { container, findAllByTestId } = render(
+      <Provider store={store}>
+        <Router>
+          <Home />
+        </Router>
+      </Provider>,
+    );
+    await findAllByTestId('symbol');
+    expect(container).toMatchSnapshot();
   });
 
-  test('testing snapshot for SearchBar.js', () => {
-    const searchBarTree = render(<SearchBar value="" onChange={() => {}} clear={() => {}} />);
-    expect(searchBarTree).toMatchSnapshot();
+  test('IncomeStatement', () => {
+    const { container } = render(<IncomeStatement data={mockIncomeStatement} />);
+    expect(container).toMatchSnapshot();
+  });
+
+  test('PageTemplate', () => {
+    const { container } = render(
+      <Router>
+        <PageTemplate title="mock title" backBtn>
+          <p>mock children</p>
+        </PageTemplate>
+      </Router>,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  test('SearchBar', () => {
+    const { container } = render(
+      <SearchBar value="mock value" onChange={mockFunction} clear={mockFunction} />,
+    );
+    expect(container).toMatchSnapshot();
+  });
+
+  test('Symbol', () => {
+    const { container } = render(
+      <Router>
+        <Symbol data={mockSymbol} />
+      </Router>,
+    );
+    expect(container).toMatchSnapshot();
   });
 });

@@ -14,9 +14,13 @@ const PageTemplate = ({ children, title, backBtn }) => (
 );
 
 PageTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
   title: PropTypes.string.isRequired,
-  backBtn: PropTypes.bool.isRequired,
+  backBtn: PropTypes.bool,
+};
+
+PageTemplate.defaultProps = {
+  backBtn: false,
 };
 
 export default PageTemplate;

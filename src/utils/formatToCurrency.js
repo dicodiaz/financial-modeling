@@ -1,6 +1,4 @@
-/* eslint-disable import/prefer-default-export */
-
-export const formatToCurrency = (num, currency) => {
+const formatToCurrency = (num, currency) => {
   const formatter = new Intl.NumberFormat(undefined, {
     style: 'currency',
     currency,
@@ -8,3 +6,5 @@ export const formatToCurrency = (num, currency) => {
 
   return formatter.format(num);
 };
+
+export default formatToCurrency;

@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Covid Metrics
+# Financial Modeling
 
-This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays all today's statistics about confirmed cases, deaths, and recoveries caused by Covid-19 in the world, as a total and separated by countries. When the user clicks on any country, the website navigates to the details page, which contains the detailed statistics about that specific country as a total and separated by regions. Both pages contain a search bar that allows the user to filter by country name. The data is consumed from [Narrativa API](https://covid19tracking.narrativa.com/index_en.html). Built with React, Redux, and Bootstrap.
+This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays a list of symbols that have financial statements, and features a pagination bar that allows the user to limit the rendered results and a search bar that allows the user to filter by symbol. When the user clicks on any symbol, the website navigates to the details page, which contains the detailed Income Statement about that specific symbol. The data is consumed from [Financial Modeling Prep API](https://site.financialmodelingprep.com/developer/docs/). Built with React, Redux, and Bootstrap.
 
 ## Mobile
 
@@ -22,7 +22,7 @@ This is a mobile web application that features 2 pages: The homepage and the det
 
 ## Live Demo
 
-[Live Demo Link](https://dicodiaz-covid-metrics.netlify.app)
+[Live Demo Link](https://financial-modeling.dicodiaz.com.co/)
 
 ## Getting Started
 
