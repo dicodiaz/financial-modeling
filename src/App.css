@@ -1,19 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body {
-  font-family: gillsans, sans-serif;
+#root {
+  font-family: lato, 'Source Sans Pro', 'Arial', sans-serif;
 }
 
 a {
-  color: #e9c46a;
+  color: inherit;
 }
 
 a:hover {
-  color: #f4a261;
-}
-
-.font-lato {
-  font-family: lato, sans-serif !important;
+  color: rgb(173, 181, 189);
 }
 
 .text-custom1 {
@@ -32,12 +28,8 @@ a:hover {
   background-color: #3c5e9f !important;
 }
 
-.cursor-pointer {
-  cursor: pointer !important;
-}
-
-.bg-symbol,
-.bg-income-statement {
+.bg-stock,
+.bg-statement {
   background-color: #5176be;
 }
 
@@ -47,40 +39,62 @@ a:hover {
   text-align: center;
 }
 
-.w-30px {
-  width: 30px;
+.page-item {
+  width: 2rem;
+}
+
+.page-item.disabled .page-link {
+  background-color: rgb(173, 181, 189);
+}
+
+.page-item.active .page-link {
+  border-color: #fff;
+}
+
+.pt-6 {
+  padding-top: 5rem !important;
+}
+
+.form-control::placeholder {
+  font-size: small;
 }
 
 @media screen and (max-width: 768px) {
-  .bg-symbol:nth-child(4n-2),
-  .bg-symbol:nth-child(4n-1),
-  .bg-income-statement:nth-child(even) {
+  .bg-stock:nth-child(4n-2),
+  .bg-stock:nth-child(4n-1),
+  .bg-statement:nth-child(even) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .bg-symbol:nth-child(even),
-  .bg-income-statement:nth-child(4n-2),
-  .bg-income-statement:nth-child(4n-1) {
+  .bg-stock:nth-child(even),
+  .bg-statement:nth-child(4n-2),
+  .bg-statement:nth-child(4n-1) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  .bg-symbol:nth-child(8n-6),
-  .bg-symbol:nth-child(8n-4),
-  .bg-symbol:nth-child(8n-3),
-  .bg-symbol:nth-child(8n-1),
-  .bg-income-statement:nth-child(4n-2),
-  .bg-income-statement:nth-child(4n-1) {
+  .bg-stock:nth-child(8n-6),
+  .bg-stock:nth-child(8n-4),
+  .bg-stock:nth-child(8n-3),
+  .bg-stock:nth-child(8n-1),
+  .bg-statement:nth-child(4n-2),
+  .bg-statement:nth-child(4n-1) {
     background-color: #3c5e9f;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .bg-symbol:nth-child(even),
-  .bg-income-statement:nth-child(even) {
+  .bg-stock:nth-child(even),
+  .bg-statement:nth-child(even) {
     background-color: #3c5e9f;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .header-title {
+    font-size: 1rem;
   }
 }
