@@ -11,7 +11,7 @@ const IncomeStatement: FC<IncomeStatementProps> = ({ data }) => {
   const { calendarYear, reportedCurrency } = data;
 
   return (
-    <Card className="rounded-0 bg-statement" data-testid="statement">
+    <Card className="rounded-0 bg-statement text-white" data-testid="statement">
       <Card.Body className="d-flex flex-column justify-content-center">
         <Row>
           <Col xs="auto" className="d-flex flex-column justify-content-center">

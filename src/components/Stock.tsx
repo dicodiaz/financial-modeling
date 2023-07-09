@@ -16,7 +16,7 @@ const Stock: FC<StockProps> = ({ data }) => {
     <Card
       data-testid="stock"
       role="button"
-      className="rounded-0 bg-stock"
+      className="rounded-0 bg-stock text-white"
       onClick={() => navigate(symbol)}
     >
       <Card.Body>
