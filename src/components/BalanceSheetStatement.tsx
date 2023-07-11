@@ -18,11 +18,15 @@ const BalanceSheetStatement: FC<BalanceSheetStatementProps> = ({ data }) => {
             <Card.Title className="mb-0">{calendarYear}</Card.Title>
           </Col>
           <Col>
-            {Object.entries(data).map(([label, value]) => {
+            {Object.entries(data).map(([name, value]) => {
+              if (name === 'calendarYear') {
+                return null;
+              }
+
               return (
                 <StatementItem
-                  key={label}
-                  label={label}
+                  key={name}
+                  name={name}
                   value={value}
                   reportedCurrency={reportedCurrency}
                 />

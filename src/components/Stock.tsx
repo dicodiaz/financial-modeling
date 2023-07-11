@@ -21,12 +21,12 @@ const Stock: FC<StockProps> = ({ data }) => {
     >
       <Card.Body>
         <Card.Title>{symbol}</Card.Title>
-        {Object.entries(data).map(([label, value]) => {
-          if (['symbol', 'exchange'].includes(label)) {
+        {Object.entries(data).map(([name, value]) => {
+          if (['symbol', 'exchange'].includes(name)) {
             return null;
           }
 
-          return <StatementItem key={label} label={label} value={value} reportedCurrency="USD" />;
+          return <StatementItem key={name} name={name} value={value} reportedCurrency="USD" />;
         })}
       </Card.Body>
     </Card>
