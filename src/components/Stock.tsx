@@ -13,12 +13,7 @@ const Stock: FC<StockProps> = ({ data }) => {
   const { symbol } = data;
 
   return (
-    <Card
-      data-testid="stock"
-      role="button"
-      className="rounded-0 bg-stock text-white"
-      onClick={() => navigate(symbol)}
-    >
+    <Card role="button" className="rounded-0 bg-stock text-white" onClick={() => navigate(symbol)}>
       <Card.Body>
         <Card.Title>{symbol}</Card.Title>
         {Object.entries(data).map(([name, value]) => {

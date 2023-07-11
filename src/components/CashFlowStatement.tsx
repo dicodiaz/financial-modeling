@@ -11,7 +11,7 @@ const CashFlowStatement: FC<CashFlowStatementProps> = ({ data }) => {
   const { calendarYear, reportedCurrency } = data;
 
   return (
-    <Card className="rounded-0 bg-statement text-white" data-testid="statement">
+    <Card data-testid="statement" className="rounded-0 bg-statement text-white">
       <Card.Body className="d-flex flex-column justify-content-center">
         <Row>
           <Col xs="auto" className="d-flex flex-column justify-content-center">

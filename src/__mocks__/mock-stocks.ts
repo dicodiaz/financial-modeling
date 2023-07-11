@@ -1,14 +1,16 @@
 import { StockType, STOCK_EXCHANGES, STOCK_TYPES } from '../redux/utils/types';
 
+export const mockStock: StockType = {
+  symbol: 'A',
+  name: 'Agilent Technologies, Inc.',
+  price: 117,
+  exchange: 'New York Stock Exchange',
+  exchangeShortName: STOCK_EXCHANGES.NYSE,
+  type: STOCK_TYPES.Stock,
+};
+
 const mockStocks: StockType[] = [
-  {
-    symbol: 'A',
-    name: 'Agilent Technologies, Inc.',
-    price: 117,
-    exchange: 'New York Stock Exchange',
-    exchangeShortName: STOCK_EXCHANGES.NYSE,
-    type: STOCK_TYPES.Stock,
-  },
+  mockStock,
   {
     symbol: 'AA',
     name: 'Alcoa Corporation',

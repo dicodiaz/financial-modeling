@@ -1,0 +1,68 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Stock > should render a clickable card with the expected content 1`] = `
+<div>
+  <div
+    class="rounded-0 bg-stock text-white card"
+    role="button"
+  >
+    <div
+      class="card-body"
+    >
+      <div
+        class="card-title h5"
+      >
+        A
+      </div>
+      <div>
+        <p
+          class="mb-0 fw-bold"
+        >
+          Name
+        </p>
+        <p
+          class="mb-0 ps-2 small fst-italic"
+        >
+          Agilent Technologies, Inc.
+        </p>
+      </div>
+      <div>
+        <p
+          class="mb-0 fw-bold"
+        >
+          Price
+        </p>
+        <p
+          class="mb-0 ps-2 small fst-italic"
+        >
+          US$ 117
+        </p>
+      </div>
+      <div>
+        <p
+          class="mb-0 fw-bold"
+        >
+          Exchange
+        </p>
+        <p
+          class="mb-0 ps-2 small fst-italic"
+        >
+          NYSE
+        </p>
+      </div>
+      <div>
+        <p
+          class="mb-0 fw-bold"
+        >
+          Type
+        </p>
+        <p
+          class="mb-0 ps-2 small fst-italic"
+        >
+          stock
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
