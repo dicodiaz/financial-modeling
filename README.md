@@ -5,10 +5,14 @@
 - [📖 About the Project](#about-project)
   - [🗝️ Key Features](#key-features)
   - [🛠️ Built With](#built-with)
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Install](#install)
   - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -74,14 +78,36 @@ Clone this repository to your desired folder:
   git clone git@github.com:dicodiaz/financial-modeling.git
 ```
 
+### Install
+
+Install this project with:
+
+```sh
+  cd financial-modeling
+  pnpm install
+```
+
 ### Usage
 
 To run the project, execute the following commands:
 
 ```sh
-  pnpm install
   pnpm dev
 ```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  pnpm test
+```
+
+### Deployment
+
+There's a CD pipeline set up to track the `develop` branch.
+
+Please open a PR from your feature branch to `develop` in order to contribute.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,6 +118,13 @@ To run the project, execute the following commands:
 - GitHub: [@dicodiaz](https://github.com/dicodiaz)
 - LinkedIn: [Dico Diaz Dussan](https://www.linkedin.com/in/dico-diaz-dussan/)
 - Portfolio: [portfolio.dicodiaz.com.co](https://portfolio.dicodiaz.com.co)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] Increase unit test coverage
+- [ ] Add integration tests with Cypress
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
