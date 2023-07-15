@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { Button, Col, FormControl, Row } from 'react-bootstrap';
-import { UseInputOutput } from '../hooks/use-input';
+import { UseInputReturn } from '../hooks/use-input';
 
 export type SearchBarProps = {
   value: string;
-  onChange: UseInputOutput['onChange'];
-  clear: UseInputOutput['clear'];
+  onChange: UseInputReturn['onChange'];
+  clear: UseInputReturn['clear'];
 };
 
 const SearchBar: FC<SearchBarProps> = ({ value, onChange, clear }) => {

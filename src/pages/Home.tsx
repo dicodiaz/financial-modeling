@@ -6,7 +6,6 @@ import Layout from '../components/Layout';
 import SearchBar from '../components/SearchBar';
 import Stock from '../components/Stock';
 import { useAppDispatch, useAppSelector } from '../hooks/redux-hooks';
-import useDebounce from '../hooks/use-debounce';
 import useInput from '../hooks/use-input';
 import useSelect from '../hooks/use-select';
 import useUpdateEffect from '../hooks/use-update-effect';
@@ -31,11 +30,15 @@ const Home: FC = () => {
   const dispatch = useAppDispatch();
   const data = useAppSelector(selectStocks);
   const error = useAppSelector(selectStocksError);
-  const { value: searchValue, onChange: onSearchChange, clear: searchClear } = useInput();
+  const {
+    value: searchValue,
+    debouncedValue: debouncedSearchValue,
+    onChange: onSearchChange,
+    clear: searchClear,
+  } = useInput({ searchParam: 'search', debounce: 150 });
   const { value: sortType, onChange: onSortTypeChange } = useSelect('a-z');
   const { value: exchangeValue, onChange: onExchangeChange } = useSelect('all');
   const { value: typeValue, onChange: onTypeChange } = useSelect('all');
-  const debouncedsearchValue = useDebounce<string>(searchValue, 100);
   const [pageSize, setPageSize] = useState(200);
   const [activePage, setActivePage] = useState(1);
   const [sortedAndFilteredData, setSortedAndFilteredData] = useState<StockState['stocks']>();
@@ -78,7 +81,7 @@ const Home: FC = () => {
 
       setSortedAndFilteredData(newSortedAndFilteredData);
     }
-  }, [debouncedsearchValue, exchangeValue, typeValue, sortType]);
+  }, [debouncedSearchValue, exchangeValue, typeValue, sortType]);
 
   if (error) {
     return (
