@@ -4,8 +4,9 @@ import { useSearchParams } from 'react-router-dom';
 export type UseInputReturn = {
   value: string;
   debouncedValue: string;
+  numberValue: number;
   setValue: Dispatch<SetStateAction<string>>;
-  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
   clear: () => void;
 };
 
@@ -13,11 +14,17 @@ export type UseInputArgs = {
   defaultValue?: string;
   searchParam?: string;
   debounce?: number;
+  onChangeCallback?: () => void;
 };
 
 export type UseInputType = (args?: UseInputArgs) => UseInputReturn;
 
-const useInput: UseInputType = ({ defaultValue = '', searchParam, debounce } = {}) => {
+const useInput: UseInputType = ({
+  defaultValue = '',
+  searchParam,
+  debounce,
+  onChangeCallback,
+} = {}) => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialValue = (searchParam && searchParams.get(searchParam)) ?? defaultValue;
   const [value, setValue] = useState(initialValue);
@@ -53,8 +60,10 @@ const useInput: UseInputType = ({ defaultValue = '', searchParam, debounce } = {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
 
-  const onChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const onChange: UseInputReturn['onChange'] = useCallback((e) => {
     setValue(e.target.value);
+    onChangeCallback?.();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const clear = useCallback(() => {
@@ -64,6 +73,7 @@ const useInput: UseInputType = ({ defaultValue = '', searchParam, debounce } = {
   return {
     value,
     debouncedValue,
+    numberValue: Number(value),
     setValue,
     onChange,
     clear,

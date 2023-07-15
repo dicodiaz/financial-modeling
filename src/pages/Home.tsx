@@ -1,13 +1,12 @@
 import { FC, useEffect, useState } from 'react';
 import { Row, Spinner } from 'react-bootstrap';
 import BasicPagination, { BasicPaginationProps } from '../components/BasicPagination';
-import BasicSelect, { BasicSelectProps } from '../components/BasicSelect';
+import BasicSelect from '../components/BasicSelect';
 import Layout from '../components/Layout';
 import SearchBar from '../components/SearchBar';
 import Stock from '../components/Stock';
 import { useAppDispatch, useAppSelector } from '../hooks/redux-hooks';
 import useInput from '../hooks/use-input';
-import useSelect from '../hooks/use-select';
 import {
   setBalanceSheetStatements,
   setBalanceSheetStatementsError,
@@ -35,11 +34,24 @@ const Home: FC = () => {
     onChange: onSearchChange,
     clear: searchClear,
   } = useInput({ searchParam: 'search', debounce: 150 });
-  const { value: sortType, onChange: onSortTypeChange } = useSelect('a-z');
-  const { value: exchangeValue, onChange: onExchangeChange } = useSelect('all');
-  const { value: typeValue, onChange: onTypeChange } = useSelect('all');
-  const [pageSize, setPageSize] = useState(200);
+  const { value: sortType, onChange: onSortTypeChange } = useInput({
+    searchParam: 'sort',
+    defaultValue: 'a-z',
+  });
+  const { value: exchangeValue, onChange: onExchangeChange } = useInput({
+    searchParam: 'exchange',
+    defaultValue: 'all',
+  });
+  const { value: typeValue, onChange: onTypeChange } = useInput({
+    searchParam: 'type',
+    defaultValue: 'all',
+  });
   const [activePage, setActivePage] = useState(1);
+  const { numberValue: pageSize, onChange: onPageSizeChange } = useInput({
+    searchParam: 'page_size',
+    defaultValue: '200',
+    onChangeCallback: () => setActivePage(1),
+  });
   const [sortedAndFilteredData, setSortedAndFilteredData] = useState<StockState['stocks']>();
 
   useEffect(() => {
@@ -53,8 +65,7 @@ const Home: FC = () => {
     if (!data) {
       dispatch(getStocks());
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [data, dispatch]);
 
   useEffect(() => {
     if (data) {
@@ -62,8 +73,8 @@ const Home: FC = () => {
       const newSortedAndFilteredData = sortStocks(
         data.filter((stock) => {
           return (
-            (stock.symbol.toLowerCase().startsWith(searchValue.toLowerCase()) ||
-              stock.name.toLowerCase().startsWith(searchValue.toLowerCase())) &&
+            (stock.symbol.toLowerCase().startsWith(debouncedSearchValue.toLowerCase()) ||
+              stock.name.toLowerCase().startsWith(debouncedSearchValue.toLowerCase())) &&
             (exchangeValue === 'all' || stock.exchangeShortName === exchangeValue) &&
             (typeValue === 'all' || stock.type === typeValue)
           );
@@ -104,11 +115,6 @@ const Home: FC = () => {
     setActivePage(page);
   };
 
-  const handlePageSizeChange: BasicSelectProps['onChange'] = (e) => {
-    setActivePage(1);
-    setPageSize(Number(e.currentTarget.value));
-  };
-
   return (
     <Layout title="Company Stocks Symbols">
       <SearchBar value={searchValue} onChange={onSearchChange} clear={searchClear} />
@@ -137,7 +143,7 @@ const Home: FC = () => {
           data={PAGE_SIZES}
           label="Page size"
           value={`${pageSize}`}
-          onChange={handlePageSizeChange}
+          onChange={onPageSizeChange}
         />
       </Row>
       <BasicPagination
