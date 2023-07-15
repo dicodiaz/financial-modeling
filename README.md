@@ -22,7 +22,7 @@
 
 # 📖 Financial Modeling <a name="about-project"></a>
 
-**Financial Modeling** is a mobile web application featuring a homepage, a routing page, and three details pages. The homepage displays a list of company stock symbols. When the user clicks on any company stock symbol, they get redirected to the routing page where they can choose what financial statements of the selected company to read about. When they click on any option, they get redirected to the respective details page, which displays relevant information about the chosen company's financial statements.
+**Financial Modeling** is a SPA that shows up-to-date data about the stock market. It features a homepage, a routing page, and three details pages. The homepage displays a list of company stock symbols. When the user clicks on any company stock symbol, they get redirected to the routing page where they can choose what financial statements of the selected company to read about. When they click on any option, they get redirected to the respective details page, which displays relevant information about the chosen company's financial statements.
 
 ## 🗝️ Key Features <a name="key-features"></a>
 
@@ -32,6 +32,7 @@
 - Allows the user to filter by stock exchange or stock type
 - Includes pagination given that there's information for more than 17000 stocks
 - Allows the user to select the page size
+- Implements `typescript`
 - Implements global state management with `@reduxjs/toolkit`
 - Implements routing with `react-router-dom`
 - Implements `react-bootstrap`'s styled components
