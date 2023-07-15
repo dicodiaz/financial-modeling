@@ -6,7 +6,7 @@ export type UseInputReturn = {
   debouncedValue: string;
   numberValue: number;
   setValue: Dispatch<SetStateAction<string>>;
-  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => void;
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => void;
   clear: () => void;
 };
 
