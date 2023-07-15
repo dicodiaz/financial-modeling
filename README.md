@@ -1,47 +1,91 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# Financial Modeling
+# 📗 Table of Contents
 
-This is a mobile web application that features 2 pages: The homepage and the details page. The homepage displays a list of symbols that have financial statements, and features a pagination bar that allows the user to limit the rendered results and a search bar that allows the user to filter by symbol. When the user clicks on any symbol, the website navigates to the details page, which contains the detailed Income Statement about that specific symbol. The data is consumed from [Financial Modeling Prep API](https://site.financialmodelingprep.com/developer/docs/). Built with React, Redux, and Bootstrap.
+- [📖 About the Project](#about-project)
+  - [🗝️ Key Features](#key-features)
+  - [🛠️ Built With](#built-with)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Mobile
+# 📖 Financial Modeling <a name="about-project"></a>
 
-![screenshot](./app_screenshot.png)
+**Financial Modeling** is a mobile web application featuring a homepage, a routing page, and three details pages. The homepage displays a list of company stock symbols. When the user clicks on any company stock symbol, they get redirected to the routing page where they can choose what financial statements of the selected company to read about. When they click on any option, they get redirected to the respective details page, which displays relevant information about the chosen company's financial statements.
 
-## Desktop
+## 🗝️ Key Features <a name="key-features"></a>
 
-![screenshot](./app_screenshot-2.png)
+- Consumes the [Financial Modeling Prep API](https://site.financialmodelingprep.com/developer/docs/)
+- Allows the user to search by company name or symbol
+- Allows the user to sort by symbol name or stock price
+- Allows the user to filter by stock exchange or stock type
+- Includes pagination given that there's information for more than 17000 stocks
+- Allows the user to select the page size
+- Implements global state management with `@reduxjs/toolkit`
+- Implements routing with `react-router-dom`
+- Implements `react-bootstrap`'s styled components
+- Uses `axios` for API data fetching
+- Includes `vitest` and `@testing-library`'s unit tests
 
-## Built With
+## 🛠️ Built With <a name="built-with"></a>
 
-- React
-- Redux
-- Bootstrap
-- VSCode
-- Git & GitHub
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://react.dev">React</a></li>
+  </ul>
+  <ul>
+    <li><a href="https://vitejs.dev/">Vite</a></li>
+  </ul>
+</details>
 
-## Live Demo
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Live Demo Link](https://financial-modeling.dicodiaz.com.co/)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Getting Started
+- [https://financial-modeling.dicodiaz.com.co](https://financial-modeling.dicodiaz.com.co)
 
-To get this project up and running, follow these simple steps:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Clone the repository into your machine (Or download the .zip file and extract).
-2. Open the project's folder.
-3. Run `npm install`
-4. Run `npm start`
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- Install [Node.js](https://nodejs.org/en)
+- Install [pnpm](https://pnpm.io/installation)
 
 ### Setup
 
-Follow the steps described before.
+Clone this repository to your desired folder:
 
-### Run tests
+```sh
+  cd my-folder
+  git clone git@github.com:dicodiaz/financial-modeling.git
+```
 
-In order to run the predefined tests for this project, run `npm test`
+### Usage
 
-## Author
+To run the project, execute the following commands:
+
+```sh
+  pnpm install
+  pnpm dev
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Dico Diaz Dussan**
 
@@ -49,20 +93,31 @@ In order to run the predefined tests for this project, run `npm test`
 - LinkedIn: [Dico Diaz Dussan](https://www.linkedin.com/in/dico-diaz-dussan/)
 - Portfolio: [portfolio.dicodiaz.com.co](https://portfolio.dicodiaz.com.co)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio).
+- A huge thanks to [Microverse](https://www.microverse.org) for their constant support.
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
