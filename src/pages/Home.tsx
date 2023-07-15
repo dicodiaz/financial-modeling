@@ -8,7 +8,6 @@ import Stock from '../components/Stock';
 import { useAppDispatch, useAppSelector } from '../hooks/redux-hooks';
 import useInput from '../hooks/use-input';
 import useSelect from '../hooks/use-select';
-import useUpdateEffect from '../hooks/use-update-effect';
 import {
   setBalanceSheetStatements,
   setBalanceSheetStatementsError,
@@ -59,13 +58,6 @@ const Home: FC = () => {
 
   useEffect(() => {
     if (data) {
-      setSortedAndFilteredData(sortStocks(data, sortType));
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [data]);
-
-  useUpdateEffect(() => {
-    if (data) {
       setActivePage(1);
       const newSortedAndFilteredData = sortStocks(
         data.filter((stock) => {
@@ -81,7 +73,7 @@ const Home: FC = () => {
 
       setSortedAndFilteredData(newSortedAndFilteredData);
     }
-  }, [debouncedSearchValue, exchangeValue, typeValue, sortType]);
+  }, [data, debouncedSearchValue, exchangeValue, typeValue, sortType]);
 
   if (error) {
     return (

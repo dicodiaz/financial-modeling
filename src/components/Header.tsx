@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Container } from 'react-bootstrap';
 import { MdKeyboardArrowLeft } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { LinkWithSearchParams } from './LinkWithSearchParams';
 
 export type HeaderProps = {
   title: string;
@@ -14,9 +14,9 @@ const Header: FC<HeaderProps> = ({ title, backBtnLink }) => {
       <Container fluid="md">
         <div className="position-relative">
           {backBtnLink && (
-            <Link to={backBtnLink}>
+            <LinkWithSearchParams to={backBtnLink}>
               <MdKeyboardArrowLeft data-testid="backBtn" className="fs-2 position-absolute" />
-            </Link>
+            </LinkWithSearchParams>
           )}
           <h1 className="mb-0 text-center h4 header-title">{title}</h1>
         </div>
